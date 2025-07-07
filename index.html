@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1 class="gallery-title">📷My Image Gallery✨</h1>
+
+  <!-- Category Buttons -->
+  <div class="filter-btns">
+    <button class="btn active" data-filter="all">All</button>
+    <button class="btn" data-filter="nature">Nature</button>
+    <button class="btn" data-filter="city">City</button>
+    <button class="btn" data-filter="animals">Animals</button>
+  </div>
+
+  <!-- Gallery Grid -->
+  <div class="gallery-container">
+    <!-- Nature -->
+    <div class="gallery-item nature"><img src="./nature1.jpg" alt="Nature 1" /></div>
+    <div class="gallery-item nature"><img src="./nature2.jpg" alt="Nature 2" /></div>
+    <div class="gallery-item nature"><img src="./nature3.jpg" alt="Nature 3" /></div>
+    <div class="gallery-item nature"><img src="./nature4.jpg" alt="Nature 4" /></div>
+
+    <!-- City -->
+    <div class="gallery-item city"><img src="./city1.jpg" alt="City 1" /></div>
+    <div class="gallery-item city"><img src="./city2.jpg" alt="City 2" /></div>
+    <div class="gallery-item city"><img src="./city3.webp" alt="City 3" /></div>
+    <div class="gallery-item city"><img src="./city4.avif" alt="City 4" /></div>
+
+    <!-- Animals -->
+    <div class="gallery-item animals"><img src="./animal1.jpg" alt="Dog" /></div>
+    <div class="gallery-item animals"><img src="./animal2.png" alt="Cat" /></div>
+    <div class="gallery-item animals"><img src="./animal3.jpg" alt="Tiger" /></div>
+    <div class="gallery-item animals"><img src="./animal4.jpg" alt="Lion" /></div>
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox">
+    <span id="close">&times;</span>
+    <img id="lightbox-img" />
+    <div class="nav">
+      <span id="prev">&#10094;</span>
+      <span id="next">&#10095;</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
